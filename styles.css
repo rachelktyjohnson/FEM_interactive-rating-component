@@ -43,6 +43,11 @@ section.form p {
   font-size: 0.8rem;
   color: hsl(217deg, 12%, 63%);
 }
+@media (min-width: 600px) {
+  section.form p {
+    font-size: 0.9rem;
+  }
+}
 section.form .rating-buttons {
   display: flex;
   justify-content: space-between;
@@ -123,6 +128,11 @@ section.thank-you p {
   font-size: 0.8rem;
   color: hsl(217deg, 12%, 63%);
   margin-top: 20px;
+}
+@media (min-width: 600px) {
+  section.thank-you p {
+    font-size: 0.82rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

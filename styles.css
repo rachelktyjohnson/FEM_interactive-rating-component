@@ -4,6 +4,113 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Overpass", sans-serif;
+  color: white;
+}
+
+body {
+  background: hsl(216deg, 12%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main.container {
+  background: hsl(213deg, 19%, 18%);
+  max-width: 330px;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+section.form img {
+  background: #333;
+  padding: 12px;
+  border-radius: 100%;
+  overflow: visible;
+  height: 40px;
+}
+section.form h1 {
+  margin: 15px 0;
+}
+section.form p {
+  font-size: 0.8rem;
+  color: hsl(217deg, 12%, 63%);
+}
+section.form .rating-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+section.form .rating-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #333;
+  outline: 0;
+  border: 0;
+  border-radius: 100%;
+  color: hsl(217deg, 12%, 63%);
+  margin: 25px 0;
+}
+section.form .rating-buttons button.selected {
+  background: hsl(217deg, 12%, 63%);
+  color: white;
+}
+@media (min-width: 600px) {
+  section.form .rating-buttons button:hover {
+    background: hsl(25deg, 97%, 53%);
+    color: white;
+    cursor: pointer;
+  }
+}
+section.form a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background: hsl(25deg, 97%, 53%);
+  border-radius: 25px;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+section.form a:hover {
+  background: white;
+  color: hsl(25deg, 97%, 53%);
+}
+section.form span.hint {
+  display: none;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 10px;
+  color: hsl(217deg, 12%, 63%);
+}
+
+section.thank-you {
+  margin: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+section.thank-you img {
+  height: 100px;
+}
+section.thank-you span {
+  background: #333;
+  padding: 10px 10px 7px;
+  border-radius: 35px;
+  color: hsl(25deg, 97%, 53%);
+  font-size: 0.9rem;
+  display: block;
+  margin: 25px 0;
+}
+section.thank-you p {
+  font-size: 0.8rem;
+  color: hsl(217deg, 12%, 63%);
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

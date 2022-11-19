@@ -21,6 +21,13 @@ main.container {
   border-radius: 10px;
   padding: 25px;
 }
+@media (min-width: 600px) {
+  main.container {
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+  }
+}
 
 section.form img {
   background: #333;
@@ -58,6 +65,11 @@ section.form .rating-buttons button.selected {
   color: white;
 }
 @media (min-width: 600px) {
+  section.form .rating-buttons button {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+  }
   section.form .rating-buttons button:hover {
     background: hsl(25deg, 97%, 53%);
     color: white;
